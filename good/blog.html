@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodWill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Montserrat:ital,wght@0,100;0,200;1,
+100&family=Poppins:wght@100;200;300;400;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,
+400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---------------HEADER--------------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_goodwill.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><form action="home.php" method="post"><button type="submit" class="btn2">HOME</form></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><form action="index.php" method="post"><button type="submit" class="btn2">Login/Sign</form></li>
+                    <li><a href="contact.html">CONTECTUS</a></li>
+                    <li><form action="registration.html" method="post"><button type="submit" class="btn2">Registration</form></li>
+                    <li><form action="logout.php" method="post"><button type="submit" class="btn2">LogOut</form></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Programs And Class</h1>
+    </section>
+    <!-- ---------------------------------------Blog Page Content----------------------- -->
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="certificate-image">
+                <h2>Our course And Class</h2>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error libero totam repellat ipsam, dignissimos iste nostrum 
+                    corrupti veritatis natus, exercitationem atque quas odio, rerum doloribus voluptatem officia earum est. Quia!</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, suscipit architecto. Hic obcaecati natus vitae tempora? Cumque,
+                         provident blanditiis, harum, tenetur enim mollitia exercitationem voluptatem sequi perferendis aliquid sit dicta!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere dolor quae mollitia reiciendis. 
+                        Sunt rerum facere commodi aperiam amet praesentium est expedita illum nihil distinctio ea, ut, nostrum consequatur.</p>
+
+                <!-- ----------------Comment Box -->
+                    <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Mail">
+                    <textarea  rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="btn red-btn">POST COMMENT</button>
+                </form>
+            </div>    
+            </div>
+           
+            
+            <div class="blog-right">
+                 <h3> Post Categories</h3>
+                 <div>
+                    <span> Business Analytics</span>
+                    <span>22</span>
+                 </div>
+                 <div>
+                    <span> Data Science</span>
+                    <span>20</span>
+                 </div>    
+                 <div>
+                    <span> Machine Learning</span>
+                    <span>25</span>
+                 </div> 
+                 <div>
+                    <span> Computer Science</span>
+                    <span>30</span>
+                 </div> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- --------------------Facilities---------------------------------------- -->
+    
+    <!--------------------FOOTER--------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, tempore!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-----------JAVA SCRIPT TO TOGGLE MEANU ------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.width = "200px";
+        }
+        function hideMenu(){
+            navLinks.style.width = "0px";
+            navLinks.style.overflow = "hidden";
+        }
+    </script>
+</body>
+</html>
